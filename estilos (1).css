@@ -1,0 +1,131 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+#contenedor{
+    width: 100%;
+}
+body{
+    margin: 0; 
+    height: 100vh;
+    background-image: url(img/Boysenberry-Sorbet-Web-1920w.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#principal{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    margin-top: 140px; 
+    padding: 10px; 
+    position: fixed;
+}
+#principal h1{
+    color: darkgray;
+    text-align: center;
+    text-shadow: 1px 10px 1px black;
+    margin-top: -40px;
+    margin-left: -1080px;
+    font-family: "Rubik Mono One", monospace;
+    font-size: 1050%;
+    margin-bottom: -30px;
+}
+#principal h2{
+    color:rgb(81, 4, 67);
+    text-align: center;
+    text-shadow: 2px 5px 2px rgb(222, 175, 198);
+    margin-left: -1080px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 400%;
+}
+#principal h3{
+    color: rgb(81, 4, 67);;
+    text-align: center;
+    text-shadow: 2px 5px 2px rgb(222, 175, 198);
+    margin-left: -1075px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 400%;
+}
+#principal p{
+    text-shadow: 0px 1px 1px black;
+    margin-top: -60px;
+    margin-left: 330px;
+    text-align: center;
+    color:cornsilk;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#cabecera{
+    margin-top: -450px;
+    margin-left: 1450px;
+    padding: 10px;
+    font-weight: bold;
+}
+#cabecera ul{
+    padding: 30px;
+    width: 200px;
+    font-family: "Tenor Sans", sans-serif;
+}
+#cabecera ul li{
+    width: 140px;
+    padding: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+#cabecera ul li a{
+    color: rgb(5, 14, 68);
+    font-size: large;
+    text-decoration:underline;
+    text-shadow: 2px 2px 2px white;
+}
+#cabecera ul li a:hover{
+    background-color: rgb(160, 181, 188);
+    color: black;
+    border-radius: 5px;
+}
+#secundario{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-left: 110px; 
+    padding: 20px; 
+}
+#iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 600px;
+    margin-left: 750px;
+}
+#iconos img{
+    margin-left: 60px;
+}
+.imagen2{
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.imagen3{
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+

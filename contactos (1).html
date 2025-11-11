@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contactos - PURE New Zealand Ice Cream</title>
+  <link rel="stylesheet" href="estilazo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="contenedor">
+    <div id="cabecera">
+      <h1>PURE New Zealand Ice Cream</h1>
+      <div id="inicio">
+        <ul>
+          <li><a href="index (3).html"><i class="fa-regular fa-heart"></i>HOME</a></li>
+          <li class="we"><a href="nosotros.html"><i class="fa-solid fa-users"></i>WE</a></li>
+          <li class="pripa"><a href="blog.html"><i class="fa-solid fa-pencil"></i>BLOG</a></li>
+          <li class="segupa"><a href="galeria.html"><i class="fa-solid fa-image"></i>GALLERY</a></li>
+          <li class="terpa"><a href="videos.html"><i class="fa-solid fa-video"></i>VIDEOS</a></li>
+          <li class="cuarpa"><a href="contactos (1).html"><i class="fa-solid fa-address-card"></i>CONTACTS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contenido">
+      <section class="contact-info">
+        <h2>CONTACT US</h2>
+        <p>We're standing by, ready to lead you into the world of 100% Natural, truly Premium Ice Cream.</p>
+
+        <p class="address">
+          <i class="fa-solid fa-location-dot"></i> 78 Anderson Road, Wanaka <br>
+          New Zealand 9305
+        </p>
+
+        <p class="note">(Freezery and offices only. PURE products only available through resellers.)</p>
+
+        <p class="phone">
+          <i class="fa-solid fa-phone"></i> p: 03 4437792 <br>
+          m: 027 6644442 <br>
+          m: 027 4480176
+        </p>
+
+        <p class="email">
+          <i class="fa-solid fa-envelope"></i> icecream@purenzicecream.co.nz
+        </p>
+
+        <div class="schedule">
+          <h3>Business Hours</h3>
+          <ul>
+            <li>Monday: 8 a.m. – 3 p.m.</li>
+            <li>Tuesday: 8 a.m. – 3 p.m.</li>
+            <li>Wednesday: 8 a.m. – 3 p.m.</li>
+            <li>Thursday: 8 a.m. – 3 p.m.</li>
+            <li>Friday: 8 a.m. – 12:30 p.m.</li>
+            <li>Saturday: Closed</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+
+        <img src="img/pure-nz-ice-cream-ad-medal.jpg" alt="Ice Cream" class="photo"/>
+      </section>
+
+      <section class="contact-form">
+        <h3>WRITE TO US</h3>
+        <form>
+          <label>Name and Surname</label>
+          <input type="text" required>
+
+          <label>Email</label>
+          <input type="email" required>
+
+          <label>Phone</label>
+          <input type="tel">
+
+          <label>Message</label>
+          <textarea placeholder="Write your message here..." required></textarea>
+
+          <button type="submit">SEND</button>
+
+          <img src="img/HF+Pick-ebed4ba2-1920w.webp" alt="Ice Cream" class="photo2"/>
+        </form>
+      </section>
+    </div>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1762668195098!6m8!1m7!1sC5JbRtHBF_LkGZL3SBDKPg!2m2!1d-40.92465605673119!2d175.0039571672226!3f191.83418!4f0!5f0.7820865974627469"
+        width="83%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
+    <footer>
+      <p>© 2025 PURE New Zealand Ice Cream | We promise to respond within one business day 🍦</p>
+      <div id="final">
+            <a href="https://www.facebook.com/purenzicecream/" target="_blank"><img class="imagen2" src="img/facebook.jpg" alt="f"></a>
+            <a href="https://www.instagram.com/purenzicecream/" target="_blank"><img class="imagen3" src="img/instagram.jpg" alt="i"></a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const form = document.querySelector(".contact-form form");
+
+    form.onsubmit = e => {
+      e.preventDefault();
+
+    const name = form.querySelector("input[type='text']").value.trim();
+    const email = form.querySelector("input[type='email']").value.trim();
+    const phone = form.querySelector("input[type='tel']").value.trim();
+    const message = form.querySelector("textarea").value.trim();
+
+    if (!name || !email || !message) return alert("Please fill out all required fields.");
+    if (phone && (isNaN(phone) || phone.length !== 9)) return alert("Phone must have 9 digits.");
+    if (!email.includes("@") || !email.includes(".")) return alert("Invalid email address.");
+
+    document.querySelector(".contact-form h3").style.display = "none";
+    form.style.display = "none";
+
+    form.insertAdjacentHTML("afterend", `
+      <div class="thankyou-message">
+        <h4>Thank you!</h4>
+        <p>We’ll get back to you soon.</p>
+      </div>
+   `);
+    };
+  </script>
+</body>
+</html>
+

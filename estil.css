@@ -1,0 +1,202 @@
+*{
+    margin: 0; /* Quitamos márgenes por defecto */
+    padding: 0; /* Quitamos rellenos por defecto */
+    box-sizing: border-box; /* Para que se incluya el padding y el borde */ /*imagen de fondo para toda la página*/
+}
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url(img/f1ff6-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Segoe UI", sans-serif;
+}
+
+#contenedor{
+    border: 7px solid brown;
+    width: 100%;
+    margin: 25px auto;
+    margin-bottom: 0;
+}
+
+#cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    background-image: url(img/f1ff6-5.jpg);
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+    border-top: 7px solid brown;
+    border-left: 7px solid brown;
+    border-right: 7px solid brown;
+}
+
+#cabecera h1{
+    color: rgb(42, 5, 75);
+    text-shadow: 2px 12px 12px plum;
+    margin-bottom: 25px;
+    font-family: "Playwrite DE SAS", cursive;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+#inicio ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#inicio ul li{
+    margin: 0 15px;
+}
+
+#inicio ul li a{
+    color: darkred;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#inicio ul li a:hover{
+    background-color:chocolate;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#inicio .terpa{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+#inicio .segupa{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+#cuerpo{
+    display: flex; /* Flexbox para acomodar elementos */
+    flex-direction: column; /* Elementos en fila */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+    margin: 10px; /* Espacio fuera */
+    padding: 20px; /* Espacio dentro */
+    margin-top: 130px;
+    padding-top: 80px;
+}
+#cuerpo img{
+    display: flex; /* Flexbox para acomodar elementos */
+    flex-direction: column; /* Elementos en fila */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+    margin: 10px; /* Espacio fuera */
+    padding: 20px; /* Espacio dentro */
+    box-shadow: 2px 2px 2px 2px black;
+}
+#cuerpo p{
+    margin: 20px;
+    padding: 10px;
+}
+#cuerpo .ima1{
+    width: 340px;
+    height: 200px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -555px;
+}
+#cuerpo .ima2{
+    width: 340px;
+    height: 200px;
+    position: absolute;
+    margin-top: -282px;
+    margin-left: -159px;
+}
+#cuerpo .ima3{
+    width: 340px;
+    height: 200px;
+    position: absolute;
+    margin-top: -286px;
+    margin-left: 231px ;
+}
+#cuerpo .ima4{
+    width: 340px;
+    height: 200px;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: -555px;
+}
+#cuerpo .ima5{
+    width: 340px;
+    height: 200px;
+    position: absolute;
+    margin-top: -280px;
+    margin-left: -159px;
+}
+#cuerpo .ima6{
+    width: 340px;
+    height: 200px;
+    position: absolute;
+    margin-top: -279px;
+    margin-left: 230px;
+}
+#cuerpo .one{
+    margin-top: 255px;
+    margin-right: 780px;
+}
+#cuerpo .two{
+    margin-top: -55px;
+    margin-left: 30px;
+}
+#cuerpo .thre{
+    margin-top: -60px;
+    margin-right: -775px;
+}
+#cuerpo .four{
+    margin-top: 220px;
+    margin-left: -750px;
+}
+#cuerpo .five{
+    margin-top: -59px;
+    margin-right: 10px;
+}
+#cuerpo .six{
+    margin-top: -58px;
+    margin-left: 819px;
+}
+#final{
+    display: flex; 
+    flex-direction: row; 
+    margin-left: 685px;
+}
+#final img{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap; 
+    margin: 10px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+}
+.imagen2{
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+}
+.imagen3{
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+}
